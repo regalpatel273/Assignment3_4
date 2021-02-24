@@ -5,12 +5,14 @@
         <meta charset="utf-8" content="width=device-width scale=1.0">
         <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
+        <script src="index1.js"></script>
     </head>
     <body>
-        <form>
+        <form id="request_form" name="request_form" action="indexvalidate.html" method="GET">
             <img src="travel.jpg" height="100" width="150" style="float: left; margin: 0.5em;">
             <h1>Travel Booking Request Form</h1><hr style="clear: left;">
-            <label class="large">Passenger Contact Info:</label><input type="text" placeholder="First Name"><input type="text" placeholder="Last Name"><br>
+            <label class="large">First Name:</label><input type="text" id="fname"><br>
+            <label class="large">Last Name:</label><input type="text" id="lname"><br>
             <label class="large">Contact Number:</label><input type="tel" placeholder="Phone number"><br>
             <label style="float: left;" class="large">Mailing Address</label>
             <section style="display: inline-block;"><input type="text" placeholder="Address Line1"><br>
@@ -268,20 +270,23 @@
                     <option value="Zimbabwe"> Zimbabwe </option>
                     <option value="other"> Other </option>
                 </select></section><br><br>
-            <label style="clear: left;" class="large">E-mail</label><input type="email" placeholder="E-mail address"><br>
-            <label class="large">Confirm E-mail</label><input type="email" placeholder="Enter same address"><br><br>
-            <button type="submit">Submit</button><br>
+            <label style="clear: left;" class="large">E-mail</label><input type="email" placeholder="E-mail address" id="email_address1"><br>
+            <label class="large">Confirm E-mail</label><input type="email" placeholder="Enter same address" id="email_address2"><br><br>
+            <input type="button" value="Submit" id="submit">
         </form>
-        <article>
-            <img src="plus.jpg" height="20px" width="30px" style="display: inline-block; margin-right: 0.2em;">
-            <h2 style="display: inline-block;">Privacy Policy</h2>
-            <p>Paragraph's Privacy Policy is designed to provide clarity about the information we collect and how we use it to provide you with a better experience. By accepting our Privacy Policy and Terms of Service in using our services or applications, you consent to our collection, storage, use and disclosure of your personal information as described in this Privacy Policy. If you have questions or concerns regarding our privacy policy or practices, please contact us.The Privacy Policy only covers information that is collected through Paragraph websites and applications, and does not cover information that may be collected through any software downloaded from Paragraph websites.</p>
-            <img src="plus.jpg" height="20px" width="30px" style="display: inline-block; margin-right: 0.2em;">
-            <h2 style="display: inline-block;">Legal</h2>
-            <p>Online forms are a great way to collect important information from visitors and users of your website. A basic online form would be a form in a pop-up box that collects email addresses of people who visit your site and wish to subscribe to your email newsletters. If you collect any personal information in a web form, even if just an email address like in these examples, you are legally required to include have a Privacy Policy on your website and/or mobile app.</p>
-            <img src="plus.jpg" height="20px" width="30px" style="display: inline-block; margin-right: 0.2em;">
-            <h2 style="display: inline-block;">Specific Instructions</h2>
-            <p>The specific instruction designed to do a task is called as a command. A command may be a simple keyword or a keyword along with a list of parameters provided to it, in order to perform a certain task. The commands may differ from one platform to another on which they are being used.</p>
+        <article id="privacy">
+            <h2 style="display: block;"><a href="#">Privacy Policy</a></h2>
+            <div>
+                <p>Paragraph's Privacy Policy is designed to provide clarity about the information we collect and how we use it to provide you with a better experience. By accepting our Privacy Policy and Terms of Service in using our services or applications, you consent to our collection, storage, use and disclosure of your personal information as described in this Privacy Policy. If you have questions or concerns regarding our privacy policy or practices, please contact us.The Privacy Policy only covers information that is collected through Paragraph websites and applications, and does not cover information that may be collected through any software downloaded from Paragraph websites.</p>
+            </div>
+            <h2 style="display: block;"><a href="#">Legal</a></h2>
+            <div>
+                <p>Online forms are a great way to collect important information from visitors and users of your website. A basic online form would be a form in a pop-up box that collects email addresses of people who visit your site and wish to subscribe to your email newsletters. If you collect any personal information in a web form, even if just an email address like in these examples, you are legally required to include have a Privacy Policy on your website and/or mobile app.</p>
+            </div>
+            <h2 style="display: block;"><a href="#">Specific Instructions</a></h2>
+            <div>
+                <p>The specific instruction designed to do a task is called as a command. A command may be a simple keyword or a keyword along with a list of parameters provided to it, in order to perform a certain task. The commands may differ from one platform to another on which they are being used.</p>
+            </div>
         </article>        
     </body>
 </html>

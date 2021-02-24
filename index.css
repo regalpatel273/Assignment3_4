@@ -13,7 +13,7 @@ form {
     opacity: 0.9;
     padding: 1em;
 }
-input, label, textarea, select, button {
+input, label, textarea, select {
     display: inline-block;
     margin: 0.3em;
     padding: 0.3em;
@@ -24,7 +24,7 @@ input, label, textarea, select, button {
     width: 200px;
     text-align: right;
 }
-button{
+#submit{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,4 +37,10 @@ article{
     margin-top: 1em;
     background-color: rgb(236, 236, 78);
     padding: 1em;
+}
+div{
+    display: none;
+}
+div.open{
+    display: block;
 }
